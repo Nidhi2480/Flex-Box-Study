@@ -1,0 +1,38 @@
+.container1 {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    height: 30vh;
+    flex:1;
+    gap: 20px; /* Adjusts spacing between items */
+    /* row-gap: 10px; */
+    /* column-gap: 20px; */
+    border: 2px solid #ccc;
+    overflow: auto;
+  }
+  
+  .item {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    flex-grow:0; /* Item grows to fill remaining space */
+    flex-shrink: 0; /* Item does not shrink */
+    /* flex-basis: auto; */ /* Initial main size of the item */
+    /* align-self: flex-start; */ /* Overrides align-items for this item */
+  }
+  
+  
+   @media (max-width: 1200px) {
+    .container1 {
+      flex-wrap: wrap;
+    }
+  } 
+  @media (max-width: 580px) {
+    .container1 {
+      flex-direction: column;
+      height: auto; 
+      align-content:center ;
+    }
+  }

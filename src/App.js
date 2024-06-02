@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import FlexBoxContainer from './components/FlexBoxContainer';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <><div className="container">
+    <header className="header">Header</header>
+    <div className="main">
+      <aside className="sidebar">
+          <div className='items'></div>
+          <div className='items'>ss</div>
+          <div className='items'>ssss</div>
+        </aside>
+
+
+
+
+      <section className="content">  
+      <FlexBoxContainer />
+      <FlexBoxContainer />
+      <FlexBoxContainer />
+ 
+      </section>
+    </div> </div>
+  
+
+</> 
   );
 }
 
